@@ -1,18 +1,17 @@
-import HeaderComponent from "./components/Header";
-import FooterComponent from "./components/Footer";
-import WorkSection from "./components/WorkSection";
+
+import { Routes, Route } from "react-router";
+import Works from "./pages/Works";
+import Layout from "./components/Layout";
 
 function App() {
 
 
   return (
-    <div className="max-w-[1440px] mx-auto min-h-screen flex flex-col">
-      <HeaderComponent />
-      <main className="flex flex-col items-center justify-center">
-        <WorkSection />
-      </main>
-      <FooterComponent />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/works" element={<Works />} />
+      </Routes>  
+    </Layout>
   )
 }
 
