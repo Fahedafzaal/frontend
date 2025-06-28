@@ -10,7 +10,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <div>
       <HeaderComponent />
-      <main>
+      <main className="mt-12">
         {children}
       </main>
       <FooterComponent />
