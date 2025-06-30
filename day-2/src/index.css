@@ -7,9 +7,13 @@
   --text-color-landing-accent: #1E0E62;
   --bg-color-landing-accent: #25DAC5;
   --text-color-landing-40: #151439 / 40%;
+  --font-size-lg: 18px;
+  --font-medium: 500;
 }
 
 body {
   font-family: var(--font-dm-sans);
-  color: var(--text-color-landing);
+  color: var(--text-color-landing-40);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-medium);
 }
