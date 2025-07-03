@@ -8,11 +8,9 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="max-w-[1440px] mx-auto min-h-screen flex flex-col">
+    <div className="w-full max-w-[1152px] mx-auto min-h-screen">
       <HeaderComponent />
-      <main className="flex flex-col items-center justify-center">
-        {children}
-      </main>
+      <main className="w-full p-16 mx-auto">{children}</main>
       <FooterComponent />
     </div>
   );
