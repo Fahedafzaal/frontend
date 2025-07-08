@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-red: oklch(0.6454 0.1872 23.99);
+  --color-cyan: oklch(0.7943 0.1184 195.03);
+  --color-orange: oklch(0.8109 0.1451 70.11);
+  --color-blue: oklch(0.6894 0.145 253.31);
+
+  --color-gray-500: oklch(0.4307 0.031 280.03);
+  --color-gray-400: oklch(0.5414 0.0136 251.64);
+  --color-white: oklch(1 0 0);
+}
+
+@layer components {
+  .typography {
+    p {
+      font-weight: 400;
+      color: var(--color-gray-400);
+      font-size: var(--text-fluid-sm);
+    }
+
+    h1 {
+      font-weight: 600;
+      color: var(--color-gray-500);
+      font-size: var(--text-fluid-xl);
+    }
+
+    h2 {
+      font-weight: 200;
+      color: var(--color-gray-400);
+      font-size: var(--text-fluid-2xl);
+    }
+  }
+}
+
+:root {
+  font-family: var(--font-poppins);
+
+  --text-fluid-sm: clamp(0.875rem, 2vw, 1.125rem);
+  --text-fluid-base: clamp(1rem, 3vw, 1.25rem);
+  --text-fluid-lg: clamp(1.125rem, 4vw, 1.5rem);
+  --text-fluid-xl: clamp(1.25rem, 5vw, 2rem);
+  --text-fluid-2xl: clamp(1.25rem, 6vw, 2rem);
+}
