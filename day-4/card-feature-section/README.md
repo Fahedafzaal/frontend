@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/Fahedafzaal/frontend/tree/main/day-4/card-feature-section)
-- Live Site URL: [Netlify Deployment](https://fahedafzaal.github.io/frontend/card-component)
+- Live Site URL: [Netlify Deployment](https://day4card.netlify.app/)
 
 ## My process
 

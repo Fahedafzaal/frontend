@@ -51,8 +51,8 @@ function App() {
       </main>
       <footer>
         <p className="attribution text-xs text-center mt-28">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a className="text-[#3e52a3]" href="#">Fahed Afzaal</a>.
+          Challenge by <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" target="_blank">Frontend Mentor</a>. 
+          Coded by <a className="text-[#3e52a3]" href="https://github.com/Fahedafzaal">Fahed Afzaal</a>.
         </p>
       </footer>
     </>
