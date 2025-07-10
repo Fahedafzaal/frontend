@@ -1,9 +1,9 @@
 {
-  "name": "card-component",
+  "name": "card-feature-section",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://fahedafzaal.github.io/frontend/card-component",
+  "homepage": "https://fahedafzaal.github.io/frontend/card-feature-section",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
