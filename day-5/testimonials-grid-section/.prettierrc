@@ -1,0 +1,3 @@
+{
+  "tailwindConfig": "./src/index.css"
+}

@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-barlow: 'Barlow Semi Condensed', sans-serif;
+
+  --color-purple-50: oklch(0.9377 0.0353 300.89);
+  --color-purple-300: oklch(0.7732 0.1215 302.02);
+  --color-purple-500: oklch(0.512 0.1978 296.28);
+
+  --color-white: oklch(1 0 0);
+  --color-gray-100: oklch(0.9363 0.0062 254.99);
+  --color-gray-200: oklch(0.8531 0 0);
+  --color-gray-400: oklch(0.5369 0.0274 269.63);
+  --color-gray-500: oklch(0.4478 0.0382 259.84);
+  --color-black: oklch(0.1815 0 0);
+  --color-slate: oklch(0.2455 0.0279 262.52);
+}
+
+@layer components {
+  p {
+    font-weight: 300;
+    font-size: var(--text-fluid-sm);
+  }
+  h2 {
+    font-weight: 600;
+    font-size: var(--text-fluid-lg);
+  }
+}
+
+:root {
+  font-family: var(--font-barlow);
+  font-size: 13px;
+
+  --text-fluid-sm: clamp(0.85rem, 2vw, 1rem);
+  --text-fluid-base: clamp(1rem, 3vw, 1.25rem);
+  --text-fluid-lg: clamp(1.125rem, 4vw, 1.5rem);
+  --text-fluid-xl: clamp(1.25rem, 5vw, 2rem);
+  --text-fluid-2xl: clamp(1.25rem, 6vw, 2rem);
+}
