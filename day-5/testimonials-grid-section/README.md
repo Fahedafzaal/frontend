@@ -1,69 +1,80 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Testimonials grid section solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### The challenge
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Users should be able to:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- View the optimal layout for the site depending on their device's screen size
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Screenshot
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![](./public/Testimonials-grid-section.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Links
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev/) - Build tool
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- TypeScript
+
+### What I learned
+
+The main challenges in this project were:
+
+1. **CSS Grid Layout with Order**: Using CSS Grid's `order` property to create the specific layout where cards appear in different positions on larger screens while maintaining a logical flow on mobile.
+
+2. **Z-index Stacking Context**: Managing the SVG quotation pattern to appear behind the text content while staying above the card background. This required careful positioning and z-index management.
+
+3. **Responsive Design**: Implementing a mobile-first approach that gracefully scales to desktop layouts using Tailwind's responsive utilities.
+
+4. **Component Architecture**: Building reusable Card components that can accept children for additional content like the SVG pattern.
+
+### Continued development
+
+Areas I want to continue focusing on in future projects:
+
+- Advanced CSS Grid techniques and complex layouts
+- Better understanding of stacking contexts and z-index behavior
+- Performance optimization for React components
+- Accessibility improvements and semantic HTML structure
+
+### Useful resources
+
+- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/) - Official CSS Grid specification
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Comprehensive guide to Tailwind utilities
+- [MDN Web Docs - Z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) - Understanding stacking contexts
+
+## Author
+
+- Frontend Mentor - [@fahedafzaal](https://www.frontendmentor.io/profile/fahedafzaal)
+- GitHub - [@fahedafzaal](https://github.com/fahedafzaal)
+

@@ -26,8 +26,10 @@ export default function Card({
           <p>{title}</p>
         </div>
       </div>
-      <h2 className="mt-4">{headline}</h2>
-      <p className="mt-4">{quote}</p>
+      <div className="relative z-10">
+        <h2 className="mt-4">{headline}</h2>
+        <p className="mt-4">{quote}</p>
+      </div>
       {children}
     </div>
   );
