@@ -17,7 +17,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`card p-8 mb-8 lg:mb-0 rounded-lg shadow-xl ${className}`.trim()}
+      className={`card p-8 mb-8 lg:mb-0 rounded-lg shadow-xl/30 ${className}`.trim()}
     >
       <div className="flex items-center gap-4">
         <img src={image} alt={name} className="h-10 w-10 rounded-full" />

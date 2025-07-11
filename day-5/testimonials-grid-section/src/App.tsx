@@ -5,7 +5,7 @@ import { testimonials } from "./data";
 function App() {
   return (
     <>
-      <main className="flex flex-col gap-4 p-8 bg-gray-100 lg:h-screen">
+      <main className="flex flex-col gap-4 p-8 bg-white lg:h-screen">
         <div className="max-w-lg lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-8 lg:m-12 lg:max-w-[85rem] m-auto lg:mx-auto lg:my-auto">
           <Card
             name={testimonials[0].name}
