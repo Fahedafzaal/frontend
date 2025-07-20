@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/Fahedafzaal/frontend/tree/main/day-6/article-component)
-- Live Site URL: [Netlify Deployment](https://your-live-site-url.com)
+- Live Site URL: [Netlify Deployment](article-preview-component-fahedafzaal.netlify.app)
 
 ## My process
 
