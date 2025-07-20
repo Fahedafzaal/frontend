@@ -2,6 +2,9 @@ import { useState } from "react";
 import avatar from "/avatar-michelle.jpg";
 import drawers from "/drawers.jpg";
 import share from "/icon-share.svg";
+import facebook from "/icon-facebook.svg";
+import twitter from "/icon-twitter.svg";
+import pinterest from "/icon-pinterest.svg";
 
 function App() {
   const [isShareOpen, setIsShareOpen] = useState(false);
@@ -31,30 +34,46 @@ function App() {
                 it felt slightly bare and uninviting. I’ve got some simple tips
                 to help you make any room feel complete.
               </p>
-              <div className="flex items-center gap-6 pt-6 md:pt-2">
-                <img
-                  src={avatar}
-                  alt="Avatar"
-                  className="rounded-full w-10 h-10"
-                />
-                <div>
-                  <p className="font-bold md:text-sm">Michelle Appleton</p>
-                  <p className="text-primary md:text-sm">28 Jun 2020</p>
+
+              {!isShareOpen && (
+                // Auther Date Section
+                <div className="flex items-center gap-6 pt-6 md:pt-2">
+                  <img
+                    src={avatar}
+                    alt="Avatar"
+                    className="rounded-full w-10 h-10"
+                  />
+                  <div>
+                    <p className="font-bold md:text-sm">Michelle Appleton</p>
+                    <p className="text-primary md:text-sm">28 Jun 2020</p>
+                  </div>
+                  <div
+                    className="ml-auto mr-2 rounded-full bg-quaternary p-2 cursor-pointer"
+                    onClick={handleShareClick}
+                  >
+                    <img src={share} alt="Share" className="w-4 h-4" />
+                  </div>
                 </div>
+              )}
+            </div>
+            {isShareOpen && (
+              // Share Section
+              <div className="flex items-center gap-6 bg-primary p-6 rounded-b-lg">
+                <p className="text-tertiary font-medium tracking-[0.5em]">
+                  SHARE
+                </p>
+                <img src={facebook} alt="Facebook" className="cursor-pointer" />
+                <img src={twitter} alt="Twitter" className="cursor-pointer" />
+                <img src={pinterest} alt="Pinterest" className="cursor-pointer" />
                 <div
                   className="ml-auto mr-2 rounded-full bg-quaternary p-2 cursor-pointer"
                   onClick={handleShareClick}
                 >
-                  <img src={share} alt="Share" className="w-4 h-4" />
+                  <img src={share} alt="Close Share" className="w-4 h-4" />
                 </div>
               </div>
-            </div>
+            )}
           </div>
-          {isShareOpen && (
-            <div className="">
-              <p>Share</p>
-            </div>
-          )}
         </div>
       </main>
     </>
